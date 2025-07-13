@@ -1,3 +1,150 @@
+# 🌍 lets-fund-climate-change  
+**A Web3-powered platform to crowdsource climate action through individual and corporate donations.**
+
+---
+
+## 🔍 Overview  
+lets-fund-climate-change is a decentralized application (DApp) designed to address climate change by enabling **transparent, secure, and incentivized donations** to verified environmental projects. Built on blockchain technology, it ensures immutability and accountability while offering rewards like NFT certificates to donors. Deployed on the **UMI DevNet** for testing and development.
+
+---
+
+## 🌱 Mission  
+To empower communities and organizations to fund critical climate initiatives such as reforestation, renewable energy, and carbon offset programs, leveraging the transparency of blockchain to build trust and drive collective action.
+
+---
+
+## 🛠️ Technologies Used  
+- **Frontend**: React, Tailwind CSS, Ethers.js  
+- **Smart Contracts**: Solidity, Hardhat  
+- **Blockchain**: UMI DevNet  
+- **Storage**: IPFS (for donation certificates/NFTs)  
+- **Wallet Integration**: MetaMask  
+- **Monitoring**: Etherscan (UMI DevNet explorer)  
+
+---
+
+## 🚀 Features  
+### For Individuals  
+- Donate cryptocurrency (e.g., UMI tokens) to vetted climate projects.  
+- Earn **NFT certificates** as proof of contribution.  
+- Track real-time impact metrics (e.g., trees planted, CO₂ offset).  
+
+### For Corporations  
+- Bulk donation options with tax deduction certifications.  
+- Custom NFT rewards for large contributions.  
+- Analytics dashboard to monitor CSR (Corporate Social Responsibility) impact.  
+
+### Admin Panel  
+- Approve/reject climate projects.  
+- Distribute funds to project owners.  
+- Generate impact reports.  
+
+---
+
+## 🧪 Installation & Usage  
+
+### Prerequisites  
+- Node.js, npm  
+- MetaMask wallet  
+- UMI DevNet test tokens  
+
+### Steps  
+1. **Clone the repo**:  
+   ```bash
+   git clone https://github.com/your-username/lets-fund-climate-change.git
+   cd lets-fund-climate-change
+   ```  
+
+2. **Install dependencies**:  
+   ```bash
+   npm install
+   ```  
+
+3. **Configure environment**:  
+   Update `.env` with your UMI DevNet RPC URL and contract addresses:  
+   ```env
+   VITE_UMI_RPC_URL=your-umi-devnet-rpc
+   VITE_CONTRACT_ADDRESS=your-contract-address
+   ```  
+
+4. **Run the app**:  
+   ```bash
+   npm run dev
+   ```  
+
+5. **Interact**:  
+   - Connect MetaMask to UMI DevNet.  
+   - Visit `http://localhost:3000` to donate or manage projects.  
+
+---
+
+## 📦 Smart Contract Deployment  
+The DApp is deployed on the **UMI DevNet**. Contract address:  
+`0x...` *(Replace with actual address)*  
+
+To deploy updates:  
+```bash
+npx hardhat run scripts/deploy.js --network umiDevNet
+```  
+
+---
+
+## 📝 Contributing  
+1. Fork the repo.  
+2. Create a feature branch (`git checkout -b feature/ClimateInitiative`).  
+3. Commit your changes (`git commit -m "Add NFT metadata"`).  
+4. Push to the branch (`git push origin feature/ClimateInitiative`).  
+5. Open a pull request.  
+
+---
+
+## 📊 Testing  
+Run tests with Hardhat:  
+```bash
+npx hardhat test
+```  
+
+---
+
+## 📄 License  
+This project is licensed under the **MIT License**.  
+
+---
+
+## 💬 Contact  
+- **Email**: climatefund@umi.org  
+- **Twitter**: [@UMIProtocol](https://twitter.com/UMIProtocol)  
+- **Discord**: [UMI Developer Community](https://discord.gg/umi)  
+- **Live Demo**: [lets-fund-climate-change.vercel.app](https://lets-fund-climate-change.vercel.app)  
+
+---
+
+## 🌐 Why UMI DevNet?  
+UMI DevNet provides a scalable, energy-efficient blockchain for testing decentralized solutions. Future plans include mainnet deployment and cross-chain integrations.  
+
+---
+
+## 📌 Notes  
+- Use [UMI DevNet Faucet](https://umi.dev/faucet) to get test tokens.  
+- All donations on DevNet are simulated; real-world contributions will be enabled on mainnet.  
+
+---
+
+**Together, we can build a greener future. 🌿**  
+
+--- 
+
+Let me know if you'd like to refine any section or add technical details!
+
+
+
+
+
+
+
+
+
+
 # LetsFund: Web3 Social / Consumer DApp on Linea
 
 "letsfund" is a groundbreaking Web3 charity fundraising platform designed to revolutionize the way charitable organizations raise funds and engage with their communities. Deployed on the Linea Sepolia Blockchain, letsfund combines the transparency and security of blockchain technology with an intuitive user experience, allowing both donors and beneficiaries to experience a seamless and trustworthy process. By leveraging decentralized technologies, letsfund aims to minimize overhead costs, enhance donor engagement, and ensure that contributions have a direct and measurable impact.
@@ -46,7 +193,7 @@ Follow these steps to run the application:
 3. Run the contract deployment script: `yarn deploy` or `yarn deploy --network linea_sepolia`
 4. Run the contract seeding script: `yarn seed`
 5. Spin up the Next.js development server: `yarn dev`
-
+Y
 Now, your application should be up and running.
 
 Linea_Sepolia contract address = 0x342b41E0F99fb95F1667BC634Ca0872709e6d4b2
