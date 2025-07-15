@@ -14,9 +14,10 @@
 /out/
 
 # production
-/build
-/cache
-/artifacts
+/build/
+/cache/
+/artifacts/
+/typechain-types/
 
 # misc
 .DS_Store
