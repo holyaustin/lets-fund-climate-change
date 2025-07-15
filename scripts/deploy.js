@@ -6,7 +6,9 @@ async function deployContract() {
   const taxPct = 5
 
   try {
-    contract = await ethers.deployContract('DappFund', [taxPct])
+    console.log("About to deploy contract")
+    contract = await ethers.deployContract('DappFund')
+    console.log("Awaiting Final contract deployment")
     await contract.waitForDeployment()
 
     console.log('Contracts deployed successfully.')

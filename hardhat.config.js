@@ -1,21 +1,25 @@
-require('@nomicfoundation/hardhat-toolbox');
+// Load environment variables from .env
 require('dotenv').config();
 
-console.log("My private key is", process.env.ACCOUNT_PRIVATE_KEY)
+// Load Hardhat plugins
+require('@nomicfoundation/hardhat-toolbox');
+require('@moved/hardhat-plugin');
 
+// Log private key (for debugging only—remove in production)
+console.log("My private key is", process.env.ACCOUNT_PRIVATE_KEY);
+
+// Hardhat configuration
 module.exports = {
-  defaultNetwork: 'devnet',
+  defaultNetwork: "devnet",
   networks: {
-    hardhat: {},
-    localhost: {
-      url: 'http://127.0.0.1:8545',
-    },
     devnet: {
       url: "https://devnet.uminetwork.com",
-      accounts: [process.env.ACCOUNT_PRIVATE_KEY]  
-    }
+      accounts: [process.env.ACCOUNT_PRIVATE_KEY], // No need for type casting in JS
+      chainId: 42069, // UMI DevNet chain ID
+      gas: "auto", 
+    },
   },
-  solidity: {
+    solidity: {
     version: '0.8.28',
     settings: {
       optimizer: {
@@ -27,4 +31,4 @@ module.exports = {
   mocha: {
     timeout: 40000,
   },
-}
+};

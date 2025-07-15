@@ -3,7 +3,7 @@
   "contractName": "Context",
   "sourceName": "@openzeppelin/contracts/utils/Context.sol",
   "abi": [],
-  "bytecode": "0x",
+  "bytecode": "0x0200",
   "deployedBytecode": "0x",
   "linkReferences": {},
   "deployedLinkReferences": {}

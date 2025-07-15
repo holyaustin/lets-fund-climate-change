@@ -42,8 +42,8 @@ contract DappFund is Ownable, AccessControl {
     address supporter;
   }
 
-  constructor(uint256 _charityTax) {
-    charityTax = _charityTax;
+  constructor() {
+    charityTax = 5;
   }
 
   function createCharity(
